@@ -1,38 +1,92 @@
-.App {
+* {
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: #fdfcf7;
+  max-width: 1000px;
+  min-height: 100vh;
+  margin: 30px auto;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+h2 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.recipes {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.card {
+  width: 200px;
+  background-color: #f5f3f3;
+  margin: 10px;
+  border-radius: 5px;
+  padding-bottom: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-image {
+  width: 100%;
+}
+
+.card-body {
+  padding: 20px;
+  text-align: center;
+}
+
+h3 {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.category {
+  color: #a1a1a1;
+}
+
+a {
+  background-color: #f5c09d;
+  color: inherits;
+  padding: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+/* searchbar */
+
+form {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 1rem;
+}
+
+input {
+  border: 1px solid #f7f7f7;
+  padding: 10px;
+  font-size: 1rem;
+  margin: 0.5rem;
+}
+
+input:focus {
+  outline: none;
+}
+
+.form-searchbar {
+  border-radius: 10px;
+  width: 400px;
+}
+
+.btn {
+  background-color: #ee9b63;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
 }
